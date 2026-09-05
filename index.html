@@ -2,17 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ciara Rowles</title>
+  <meta name="description" content="Ciara Rowles — machine learning research scientist working on generative models and mechanistic interpretability.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    // Applied before first paint so the page never flashes the wrong theme.
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
 </head>
 
 <body>
-  <h1>Ciara Rowles</h1>
-  <p>Machine Learning Research Scientist</p>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <!-- Swap this for a photo: <img class="sidebar-avatar" src="assets/avatar.jpg" alt="Ciara Rowles"> -->
+        <div class="sidebar-avatar sidebar-avatar--monogram" aria-hidden="true">CR</div>
 
-  <h2>Research</h2>
-  <p>Research in generative modelling and mechanistic interpretability.</p>
+        <div>
+          <h1 class="sidebar-name">Ciara Rowles</h1>
+          <p class="sidebar-info">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21h18" /><path d="M3 10h18" /><path d="M5 6l7 -3l7 3" />
+              <path d="M4 10v11" /><path d="M20 10v11" />
+              <path d="M8 14v3" /><path d="M12 14v3" /><path d="M16 14v3" />
+            </svg>
+            Machine Learning Research Scientist
+          </p>
+          <p class="sidebar-bio">
+            Research on generative models — image, video and audio — and on how
+            language models represent what they do not say.
+          </p>
 
-  <h2>Writing</h2>
-  <p>Coming soon.</p>
+          <div class="social-links">
+            <a href="https://github.com/CiaraStrawberry" class="social-link" target="_blank" rel="noreferrer" aria-label="Ciara Rowles on GitHub" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=" class="social-link" target="_blank" rel="noreferrer" aria-label="Ciara Rowles on Google Scholar" title="Google Scholar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+              </svg>
+            </a>
+            <a href="https://arxiv.org/a/rowles_c_1" class="social-link" target="_blank" rel="noreferrer" aria-label="Ciara Rowles on arXiv" title="arXiv">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-3" />
+                <path d="M3 12h5v7h-5z" />
+              </svg>
+            </a>
+            <!-- Add more links here, e.g. email, X, LinkedIn, ORCID. -->
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">About<span class="nav-link-line"></span></a></li>
+          <li><a href="publications.html" class="nav-link inactive">Publications<span class="nav-link-line"></span></a></li>
+        </ul>
+      </nav>
+
+      <main class="main-body">
+        <header class="page-header">
+          <h2 class="page-title">About</h2>
+          <p class="page-subtitle">
+            Generative modelling, and the internal representations that make it work.
+          </p>
+        </header>
+
+        <section class="section prose">
+          <h3 class="section-title">Research</h3>
+          <p>
+            I work on generative models across modalities. Recent work covers
+            conditioning and control in diffusion models
+            (<a href="publications.html">IPAdapter-Instruct</a>), aligning frozen
+            text-to-audio models to video for Foley
+            (<a href="publications.html">Foley Control</a>), and fine-tuning image
+            layer decomposition with reinforcement learning from vision-language
+            model feedback (<a href="publications.html">Stable-Layers</a>).
+          </p>
+          <p>
+            More recently I have been looking at interpretability: what happens to
+            an internal state when a language model is told to suppress it, and why
+            activation monitors trained in one behavioural regime can quietly stop
+            working in another
+            (<a href="publications.html">J-Space Hacking</a>).
+          </p>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Research interests</h3>
+          <ul class="chips">
+            <li class="chip">Generative models</li>
+            <li class="chip">Diffusion &amp; flow matching</li>
+            <li class="chip">Controllable image generation</li>
+            <li class="chip">Video-to-audio</li>
+            <li class="chip">Reinforcement learning from model feedback</li>
+            <li class="chip">Mechanistic interpretability</li>
+          </ul>
+        </section>
+
+        <hr class="divider">
+
+        <section class="section prose">
+          <h3 class="section-title">Elsewhere</h3>
+          <p>
+            Code and experiments live on
+            <a href="https://github.com/CiaraStrawberry" target="_blank" rel="noreferrer">GitHub</a>.
+            Papers are collected on the
+            <a href="publications.html">publications</a> page.
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span class="body-xs">&copy; 2026 Ciara Rowles.</span>
+        <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+            <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+          </svg>
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="assets/theme.js"></script>
 </body>
 </html>
