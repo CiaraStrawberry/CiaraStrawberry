@@ -78,8 +78,8 @@
 
           <article class="card">
             <div class="card-content">
-              <a class="card-title" href="papers/j-space-hacking.pdf">
-                J-Space Hacking: Representational Reencoding Beyond the Verbalizable Workspace
+              <a class="card-title" href="papers/ShiftBench.pdf">
+                ShiftBench: Do Activation Monitors Read the State or Its Encoding?
               </a>
               <div class="card-meta">
                 <span>
@@ -87,7 +87,7 @@
                     <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
                     <path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" />
                   </svg>
-                  September 2026
+                  November 2026
                 </span>
                 <span>
                   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -102,24 +102,24 @@
                     <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
                     <path d="M3 6v13" /><path d="M12 6v13" /><path d="M21 6v13" />
                   </svg>
-                  Preprint
+                  ICML 2026 (under review)
                 </span>
               </div>
               <div class="card-tags">
-                <span class="tag">#Interpretability</span>
                 <span class="tag">#Activation Monitoring</span>
+                <span class="tag">#Distribution Shift</span>
                 <span class="tag">#Language Models</span>
               </div>
               <p class="card-desc">
-                When a language model is instructed to suppress an internal state,
-                the state is not erased — it is re-encoded into a basis that ordinary
-                expression-aligned readouts miss. Targeted interventions separate
-                decodability from output accessibility, showing how activation
-                monitors trained in one behavioural regime can fail in another.
+                ShiftBench tests whether activation monitors can still detect a
+                state when instructions change how a language model encodes it.
+                Across controlled suppression and published system prompts, it
+                evaluates monitors only when independent decoders can still identify
+                the state, separating monitor failures from loss of state information.
               </p>
             </div>
             <div class="card-actions">
-              <a class="btn" href="papers/j-space-hacking.pdf" target="_blank" rel="noreferrer">PDF</a>
+              <a class="btn" href="papers/ShiftBench.pdf" target="_blank" rel="noreferrer">PDF</a>
             </div>
           </article>
 
